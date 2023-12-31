@@ -1,0 +1,8 @@
+/* global ipfs, all */
+
+const run = async (files) => {
+  const result = await all(ipfs.addAll(files))
+  
+  return result
+}
+return run
